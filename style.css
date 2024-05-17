@@ -351,6 +351,13 @@
    .Cajas{
         margin: 20px;
     }
+    .form{
+        width: 320px;
+    }
+    .regi-sesion{
+        width: 250px;
+        height: 250px;
+    }
 
 }
 
