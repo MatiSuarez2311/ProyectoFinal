@@ -1,0 +1,52 @@
+/*Registro*/
+.form{
+    background-color: $color-primario;
+    width: 30%;
+    height: 450px;
+    margin: 30px auto 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    @media(max-width: 720px ){
+        width: 320px;
+    }
+}
+ 
+.form-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 0px;
+}
+
+.form-label{
+    color: white;
+
+
+}
+
+.form-input{
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px 4px;
+  
+}
+.form-input::placeholder{
+    color: white;
+}
+.form-input:focus{
+    border-color: 3px solid white;
+    outline: none;
+}
+
+.Boton-formulario{
+    width: 100%;
+    color: $color-secundario;
+    font-weight: bold;
+    background-color: bisque;
+    border: 0px;
+    border-radius: 5px;
+    padding: 2px;
+}

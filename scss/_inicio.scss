@@ -1,0 +1,40 @@
+/*Inicio*/
+.inicio {
+    color: $color-secundario;
+    font-size: 20px;
+    @media(max-width: 797px ){
+        font-size: 208px;
+        }
+  }
+  
+  .Titulo-inicio {
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 35px;
+    letter-spacing: 0.8px;
+    color:$color-primario;
+    font-weight: bold;
+    text-shadow: 2px;
+    -webkit-text-decoration: underline solid rgb;
+            text-decoration: underline solid rgb;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  .Parrafo {
+    -webkit-text-decoration: double;
+            text-decoration: double;
+    text-align: center;
+    margin: 2%;
+    font-size: 28px;
+  }
+  
+  .especialidad {
+    color: black;
+    text-decoration: underline;
+    text-align: justify;
+    text-shadow: 20px;
+    font-size: 25px;
+    margin: 1%;
+  }
+  

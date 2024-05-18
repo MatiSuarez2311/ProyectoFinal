@@ -1,0 +1,35 @@
+.navegador{
+    color:white;
+    width: 100%;
+    padding: 5px;    
+    font-size: 25px;
+    text-align:left;
+    background-color: $color-secundario;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content:center;
+    @media(max-width: 797px ){
+        width: 70%;
+        height: 70px;
+    }
+}      
+
+.navegador-links{
+    display: flex;
+    gap: 20px;
+}
+
+.navegador-link{
+        font-size: medium;
+        text-align: left;
+        list-style: none; 
+}
+
+.navegador-link a{
+    display: block;
+    padding: 20px 20px;
+    color: white;
+    text-decoration: none;
+}
