@@ -10,6 +10,15 @@
     top: 0px;
     display: flex;
     justify-content:center;
+    align-items: center;
+ .icono-menu{
+    color: whitesmoke;
+    font-size: 30px;
+    display: none;
+    @media (max-width: 576px){
+        display:block;
+    }
+ }   
     @media(max-width: 797px ){
         width: 70%;
         height: 70px;
@@ -17,14 +26,20 @@
 }      
 
 .navegador-links{
-    display: flex;
+    margin: 0;
     gap: 20px;
+    @media (max-width: 576px){
+        position: absolute;
+        width: 100px;
+        background-color: whitesmoke;
+        height: 100vh;1
+    }
 }
 
 .navegador-link{
-        font-size: medium;
-        text-align: left;
-        list-style: none; 
+    font-size: medium;
+    text-align: left;
+    list-style: none; 
 }
 
 .navegador-link a{
