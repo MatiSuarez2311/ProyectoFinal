@@ -6,15 +6,20 @@
 
 /*Inicio*/
 .inicio {
-  color: black;
+  color: #000000;
   font-size: 20px;
+}
+@media (max-width: 797px) {
+  .inicio {
+    font-size: 208px;
+  }
 }
 
 .Titulo-inicio {
   font-family: "Palatino Linotype", "Book Antiqua", serif;
   font-size: 35px;
   letter-spacing: 0.8px;
-  color: red;
+  color: #BD2A2E;
   font-weight: bold;
   text-shadow: 2px;
   -webkit-text-decoration: underline solid rgb;
@@ -47,17 +52,53 @@
   padding: 5px;
   font-size: 25px;
   text-align: left;
-  background-color: black;
+  background-color: #000000;
   z-index: 2;
   position: fixed;
   top: 0px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.navegador .icono-menu {
+  color: whitesmoke;
+  font-size: 30px;
+  display: none;
+}
+.navegador .icono-menu:hover + .navegador-links {
+  right: 0;
+}
+@media (max-width: 576px) {
+  .navegador .icono-menu {
+    display: block;
+  }
+}
+@media (max-width: 797px) {
+  .navegador {
+    width: 70%;
+    height: 70px;
+  }
 }
 
 .navegador-links {
-  display: flex;
+  margin: 0;
   gap: 20px;
+}
+@media (max-width: 576px) {
+  .navegador-links {
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 100px;
+    background-color: whitesmoke;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 100px;
+    transition: 1s;
+  }
+  .navegador-links:hover {
+    right: 0px;
+  }
 }
 
 .navegador-link {
@@ -87,14 +128,14 @@
 }
 
 .formulario-sesion {
-  color: black;
+  color: #000000;
   font-size: 20px;
   text-align: left;
   background-color: lightsteelblue;
 }
 
 .Titulo-tienda {
-  color: rgb(189, 29, 29);
+  color: #BD2A2E;
   font-size: 35px;
   text-align: center;
   font-weight: bold;
@@ -113,6 +154,11 @@
   justify-content: space-around;
   gap: 10px;
   z-index: 1;
+}
+@media (max-width: 797px) {
+  .Cajas {
+    margin: 20px;
+  }
 }
 
 .caja-producto1 {
@@ -164,9 +210,9 @@
 }
 
 .boton-compra {
-  width: 40%;
-  height: 40px;
-  background-color: rgb(167, 40, 40);
+  width: 60%;
+  height: 60px;
+  background-color: #BD2A2E;
   color: whitesmoke;
   border: 0px;
   padding: 10px;
@@ -179,17 +225,22 @@
 
 .boton-compra:hover {
   background-color: rgb(44, 112, 238);
-  width: 35%;
+  width: 45%;
 }
 
 /*Registro*/
 .form {
-  background-color: brown;
+  background-color: #BD2A2E;
   width: 30%;
   height: 450px;
   margin: 30px auto 30px auto;
   padding: 20px;
   border-radius: 10px;
+}
+@media (max-width: 720px) {
+  .form {
+    width: 320px;
+  }
 }
 
 .form-grupo {
@@ -227,7 +278,7 @@
 
 .Boton-formulario {
   width: 100%;
-  color: black;
+  color: #000000;
   font-weight: bold;
   background-color: bisque;
   border: 0px;
@@ -237,12 +288,18 @@
 
 /*InicioSesion*/
 .regi-sesion {
-  background-color: brown;
+  background-color: #BD2A2E;
   width: 600px;
   height: 250%;
   margin: 30px auto 30px auto;
   padding: 50px;
   border-radius: 20px;
+}
+@media (max-width: 720px) {
+  .regi-sesion {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .regi-grupo {
@@ -255,9 +312,9 @@
 /*Contactos*/
 .Titulo-ubi {
   font-family: "Palatino Linotype", "Book Antiqua", serif;
-  font-size: 45px;
+  font-size: 35px;
   letter-spacing: 0.8px;
-  color: brown;
+  color: #BD2A2E;
   font-weight: bold;
   text-shadow: 2px;
   -webkit-text-decoration: underline solid rgb;
@@ -266,13 +323,24 @@
   text-decoration: underline;
   text-align: center;
 }
+@media (max-width: 720px) {
+  .Titulo-ubi {
+    font-size: 20px;
+  }
+}
 
 /*Ubicacion*/
 .Img-ubi {
-  width: 40%;
+  width: 50%;
   margin: 30px;
   margin-left: 350px;
   border-radius: 2%;
+}
+@media (max-width: 720px) {
+  .Img-ubi {
+    width: 10%;
+    margin: 0%;
+  }
 }
 
 .Img-Ubimaps {
@@ -280,13 +348,18 @@
   margin: 30px;
   margin-top: 250px;
 }
+@media (max-width: 720px) {
+  .Img-Ubimaps {
+    margin-top: 100px;
+  }
+}
 
 /*instagram*/
 .titulo-ig {
   font-family: "Palatino Linotype", "Book Antiqua", serif;
   font-size: 40px;
   letter-spacing: 0.8px;
-  color: brown;
+  color: #BD2A2E;
   font-weight: bold;
   text-shadow: 2px;
   -webkit-text-decoration: underline solid;
@@ -296,16 +369,26 @@
   text-align: center;
   margin-top: 100px;
 }
+@media (max-width: 720px) {
+  .titulo-ig {
+    font-size: 15px;
+  }
+}
 
 .img-ig {
   width: 15%;
   margin-top: 100px;
   margin-left: 850px;
 }
+@media (max-width: 720px) {
+  .img-ig {
+    margin-left: 200px;
+  }
+}
 
 /*Pie de pagina*/
 .pie-pagina {
-
+  background-color: aqua;
   padding: 20px;
   margin-top: 200px;
 }
@@ -315,51 +398,4 @@
   font-size: 15px;
 }
 
-/*Media Query*/
-@media (max-width: 797px) {
-  .inicio {
-    font-size: 208px;
-  }
-  .Cajas {
-    margin: 20px;
-  }
-  .form {
-    width: 320px;
-  }
-  .regi-sesion {
-    width: 250px;
-    height: 250px;
-  }
-}
-@media (max-width: 992px) {
-  .Img-ubi {
-    margin-left: 200px;
-  }
-  .img-ig {
-    margin-left: 300px;
-  }
-}
-/*Media Query*/
-@media (max-width: 797px) {
-  .inicio {
-    font-size: 208px;
-  }
-  .Cajas {
-    margin: 20px;
-  }
-  .form {
-    width: 320px;
-  }
-  .regi-sesion {
-    width: 250px;
-    height: 250px;
-  }
-}
-@media (max-width: 992px) {
-  .Img-ubi {
-    margin-left: 200px;
-  }
-  .img-ig {
-    margin-left: 300px;
-  }
-}/*# sourceMappingURL=style.css.map */
+@im;/*# sourceMappingURL=style.css.map */
